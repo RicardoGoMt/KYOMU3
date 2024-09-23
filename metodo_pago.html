@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método de Pago - KYOMU STATIONERY CUTE</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <!-- Header con logo -->
+    <header>
+        <div class="navbar">
+            <h1 class="logo">KYOMU STATIONERY CUTE</h1>
+        </div>
+    </header>
+
+    <!-- Formulario de método de pago -->
+    <section id="metodo-pago">
+        <h1>Seleccione su Método de Pago</h1>
+        <form id="pago-form">
+            <div class="form-group">
+                <label for="nombre">Nombre en la Tarjeta:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="numero-tarjeta">Número de Tarjeta:</label>
+                <input type="text" id="numero-tarjeta" name="numero-tarjeta" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha-expiracion">Fecha de Expiración:</label>
+                <input type="month" id="fecha-expiracion" name="fecha-expiracion" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV:</label>
+                <input type="password" id="cvv" name="cvv" required>
+            </div>
+            <button type="button" id="confirmar-pago">Confirmar Pago</button>
+            <a href="carrito.html">VOLVER AL CARRITO</a>
+        </form>
+    </section>
+
+    <!-- Enlazar el script externo -->
+    <script src="js/metodo_pago.js"></script>
+</body>
+</html>

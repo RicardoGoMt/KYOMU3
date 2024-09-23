@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Producto - KYOMU STATIONERY CUTE</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1 class="logo">KYOMU STATIONERY CUTE</h1>
+            <a href="carrito.html">🛒 Carrito</a>
+        </div>
+    </header>
+    <header>
+        <center>
+            <h1 id="nombre-producto" style="
+            font-family: 'Dancing Script', cursive;
+        "></h1>
+        </center>
+    </header>
+
+    <section id="producto-detalle">
+        <div class="imagen-container">
+            <img id="imagen-producto" src="" alt="Imagen del Producto">
+        </div>
+        <div class="imagen-controles">
+            <button id="btn-prev">Anterior</button>
+            <button id="btn-next">Siguiente</button>
+        </div>
+        <h2 id="nombre-producto-detalle">Nombre del Producto</h2>
+        <p id="descripcion-producto">Descripción del producto.</p>
+        <p id="precio-producto">Precio: $0.00</p>
+        
+        <div class="carrito">
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" value="1">
+            <button onclick="agregarAlCarrito()">Agregar al carrito</button>
+        </div>
+    </section>
+    <script src="js/producto.js"></script>
+    <center><a href="prueba.html">INICIO</a></center>
+</body>
+</html>

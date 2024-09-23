@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+<body>
+    <div class="navbar">
+        <span class="logo">KYOMU STATIONERY CUTE</span>
+    </div>
+
+    <section id="contacto">
+        <h1>CONTACTO</h1>
+        
+        <form action="guardar_contacto.php" method="post">
+            <label for="name">Inserta tu nombre</label>
+            <input type="text" id="name" name="name" required><br>
+        
+            <label for="apellidopaterno">Inserta tu apellido Paterno</label>
+            <input type="text" id="apellidopaterno" name="apellidopaterno" required><br>
+        
+            <label for="apellidomaterno">Inserta tu apellido Materno</label>
+            <input type="text" id="apellidomaterno" name="apellidomaterno" required><br>
+        
+            <label for="profession">Inserta tu profesión</label>
+            <select name="profession" id="profession">
+                <option value="LTF">LICENCIATURA EN TERAPIA FÍSICA</option>
+                <option value="LAG">LICENCIATURA EN ADMINISTRACIÓN</option>
+                <option value="ISC">INGENIERÍA EN SISTEMAS</option>
+                <option value="IRT">INGENIERÍA EN ROBÓTICA</option>
+            </select><br>
+        
+            <label for="email">Inserta tu correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required><br>
+        
+            <label for="telefono">Inserta tu número de teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="123-456-7890" required><br>
+        
+            <label for="comentarios">Envía comentarios</label>
+            <textarea name="comentarios" id="comentarios" rows="4" cols="50" placeholder="Inserta comentarios"></textarea><br>
+        
+            <input type="submit" value="ENVIAR"/><br>
+        </form>
+        
+        <a href="prueba.html">INICIO</a>
+    </section>
+</body>
+</html>

@@ -1,0 +1,353 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #E5ADA8; /* Strawberry */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    color: #725C3F; /* Chocolate */
+    font-size: 24px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(208, 167, 123, 0.8); /* Caramel */
+    display: none;
+    flex-direction: column;
+    padding: 50px 20px 20px 20px;
+    z-index: 1000;
+}
+
+.menu-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #725C3F; /* Chocolate */
+    z-index: 1001;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.menu ul li {
+    padding: 10px 0;
+}
+
+.menu ul li a {
+    color: #EFE8D8; /* Lemon */
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 20px;
+    background-color: #E5ADA8; /* Strawberry */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu ul li a:hover {
+    background-color: #D0A77B; /* Caramel */
+}
+
+/* Mostrar el menú */
+.menu.active {
+    display: flex;
+}
+
+/* Secciones de la página */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#inicio {
+    background-color: #E5E0D8; /* Vanilla */
+}
+
+#productos {
+    background-color: #D8D7B2; /* Mint */
+}
+
+#promociones {
+    background-color: #EFE8D8; /* Lemon */
+}
+
+#contacto {
+    background-color: #D0A77B; /* Caramel */
+}
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #725C3F; /* Chocolate */
+}
+
+form input, form select, form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #E5ADA8; /* Strawberry */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #D0A77B; /* Caramel */
+}
+
+/* Enlaces */
+a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #E5ADA8; /* Strawberry */
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    
+}
+
+a:hover {
+    background-color: #D0A77B; /* Caramel */
+}
+
+/* Productos */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+.product-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Asegura que el contenido se distribuya verticalmente */
+    font-family: 'Dancing Script', cursive; 
+}
+
+/* Asegura que las imágenes se adapten al contenedor */
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Espacio entre la imagen y el título */
+}
+
+/* Botón del producto */
+.product-item a {
+    display: inline-block;
+    margin-top: auto; /* Empuja el botón hacia el fondo del contenedor */
+    padding: 10px 20px;
+    color: #007bff;
+    text-decoration: none;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s;
+    
+}
+
+.product-item a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Imagen del producto en la página de detalles */
+#producto-detalle img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-height: 400px;
+}
+/* Contenedor general */
+#producto-detalle {
+    max-width: 600px;
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    border-radius: 8px; /* Esquinas redondeadas */
+    font-family: 'Dancing Script', cursive; 
+}
+
+/* Estilo para los botones de navegación */
+.imagen-controles {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.imagen-controles button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.imagen-controles button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el título y descripción del producto */
+#nombre-producto-detalle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive; 
+}
+
+#descripcion-producto, #precio-producto {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive; 
+}
+
+/* Contenedor del carrito */
+.carrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espacio entre los elementos */
+    margin-top: 20px;
+}
+
+/* Campo de cantidad */
+.carrito input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botón de agregar al carrito */
+.carrito button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carrito button:hover {
+    background-color: #218838;
+}
+/* Estilos específicos para el carrito */
+#carrito-detalle {
+    max-width: 800px; /* Ajusta según el diseño de tu sitio */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    border-radius: 8px; /* Esquinas redondeadas */
+    font-family: 'Dancing Script', cursive; /* Fuente personalizada */
+    text-align: center;
+}
+
+.carrito-contenedor {
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd; /* Línea borde clara */
+    background-color: #f9f9f9; /* Fondo ligeramente gris */
+    border-radius: 8px; /* Esquinas redondeadas */
+    max-width: 100%; /* Asegura que el contenedor no se expanda demasiado */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+.carrito-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Línea de separación entre productos */
+    font-size: 1em; /* Tamaño de fuente estándar */
+}
+
+.total-precio {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #007BFF; /* Color azul */
+}
+#confirmar-pago {
+    background-color: #ff69b4; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 6px 12px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de la fuente */
+    font-weight: bold; /* Texto en negrita */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Efecto de transición */
+}
+
+/* Efecto al pasar el ratón por encima del botón */
+#confirmar-pago:hover {
+    background-color: #ff1493; /* Color de fondo al hacer hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+/* Efecto al hacer clic en el botón */
+#confirmar-pago:active {
+    background-color: #c71585; /* Color de fondo al hacer clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más reducida */
+    transform: translateY(2px); /* Efecto de movimiento */
+}
+
+
+
